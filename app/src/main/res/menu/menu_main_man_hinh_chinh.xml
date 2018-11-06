@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:id="@+id/db" android:title="noi bat trong ngay" android:icon="@drawable/ic_view_headline_black_24dp"/>
+    <item android:id="@+id/da" android:title="noi bat trong ngayư" android:icon="@drawable/ic_view_headline_black_24dp"/>
+    <item android:id="@+id/dc" android:title="noi bat trong ngayq" android:icon="@drawable/ic_view_headline_black_24dp"/>
+    <item android:id="@+id/de" android:title="noi bat trong ngaya" android:icon="@drawable/bogoc_button_login"/>
+    <item android:id="@+id/dd" android:title="noi bat trong ngayv" android:icon="@drawable/bogoc_button_login"/>
+    <item android:id="@+id/dh" android:title="noi bat trong ngayg" android:icon="@drawable/bogoc_button_login"/>
+    <item android:id="@+id/dk" android:title="noi bat trong ngay1" android:icon="@drawable/bogoc_button_login"/>
+</menu>

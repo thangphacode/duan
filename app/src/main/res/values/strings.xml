@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DuAn1</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="search_to">Từ khoá bạn nhập phải bằng tiếng việt có dấu , không chứa ký tự đặc biệt như !, @, # ...</string>
 </resources>

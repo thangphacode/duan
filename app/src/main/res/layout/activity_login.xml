@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/anh3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_marginTop="77dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_marginTop="100dp"
+            android:textSize="12dp"
+            android:background="@drawable/duongvien_goctron"
+            android:layout_gravity="center"
+            android:hint="Nhập tài khoản"
+            android:id="@+id/edNhapTaiKhoan_Login"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/duongvien_goctron"
+            android:layout_gravity="center"
+            android:hint="Nhập mật khẩu"
+            android:id="@+id/edPass_Login"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:textColor="#EEEE"
+            android:background="@drawable/bogoc_button_login"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="login" />
+        <Button
+            android:textColor="#EEEE"
+            android:background="@drawable/botron_dn_facebook"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_ĐangnhapFacebook"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Đăng Nhập Với FaceBook" />
+
+        <!--<Button-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_width="184dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="sign up" />-->
+    </LinearLayout>
+</RelativeLayout>
