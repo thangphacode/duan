@@ -17,18 +17,18 @@ import android.widget.Toast;
 
 public class ManHinhChinh extends AppCompatActivity {
     ImageButton imgbtnLogin, imgbtnSearch;
-//    private DrawerLayout mDrawerLayout;
-//    private ActionBarDrawerToggle toggle;
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle toggle;
 
     //kkkkkkkkkkkkkkkkk
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_man_hinh_chinh);
-//        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer);
-//        toggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
-//        mDrawerLayout.addDrawerListener(toggle);
-//        toggle.syncState();
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+        toggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
+        mDrawerLayout.addDrawerListener(toggle);
+       toggle.syncState();
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         imgbtnLogin = (ImageButton) findViewById(R.id.imgbtnLogin);
         imgbtnSearch = (ImageButton) findViewById(R.id.imgbtnSearch);
@@ -51,13 +51,13 @@ public class ManHinhChinh extends AppCompatActivity {
         });
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        if (toggle.onOptionsItemSelected(item)){
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (toggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
         public void perform_action(View v) {
         TextView tv = (TextView) findViewById(R.id.tvThuVien);
         //alter text of textview widget
@@ -78,10 +78,10 @@ public class ManHinhChinh extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.tvAnhCuaToi);
         Intent intentAnhCuaToi = new Intent(ManHinhChinh.this, AnhCuaToi.class);
         startActivity(intentAnhCuaToi);
-        //alter text of textview widget
-////        tv.setText("Anh Cua Tôi");
-////        //assign the textview forecolor
-////        tv.setTextColor(Color.GREEN);
+//        //alter text of textview widget
+//////        tv.setText("Anh Cua Tôi");
+//////        //assign the textview forecolor
+//////        tv.setTextColor(Color.GREEN);
     }
 
     public void Anh_Noi_Bat(View view) {
@@ -90,12 +90,12 @@ public class ManHinhChinh extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-//Creating the instance of PopupMenu
+////Creating the instance of PopupMenu
                 PopupMenu popup = new PopupMenu(ManHinhChinh.this, tv);
-//Inflating the Popup using xml file
+////Inflating the Popup using xml file
                 popup.getMenuInflater().inflate(R.menu.menu_main, popup.getMenu());
-
-////registering popup with OnMenuItemClickListener
+//
+//////registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
                         Toast.makeText(ManHinhChinh.this, "You Clicked : " + item.getTitle(), Toast.LENGTH_SHORT).show();
